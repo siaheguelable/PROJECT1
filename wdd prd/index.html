@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <header>
+        <img src="images/globe.png" alt="Globe Image">
+    </header>
+    <section>
+        <form id="query-form">
+            <label for="citySelected">Choose a city to see the weather forecast:</label>
+            <select name="citySelected" id="citySelected" data-toggle="tooltip" data-placement="bottom" title="Drop down and select a city to see the forecast">
+                <option disabled selected value> -- select a city -- </option>
+            </select>
+            <button type="submit">Get Weather Forecast</button>
+        </form>
+    </section>
+    <main>
+        <div id="forecast" class="forecast"></div>
+    </main>
+</body>
+</html>
